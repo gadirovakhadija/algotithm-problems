@@ -9,14 +9,12 @@ public class RepeatedNumber {
 
         Map<Integer,Integer> insideOfMap = new HashMap<>();
 
-        for (int i=0;i<numbers.length;i++){
-            int number = numbers[i];
-
-            if(insideOfMap.containsKey(number)){
+        for (int number : numbers) {
+            if (insideOfMap.containsKey(number)) {
                 int numberCount = insideOfMap.get(number);
-                insideOfMap.put(number,numberCount+1);
-            }else {
-                insideOfMap.put(number,1);
+                insideOfMap.put(number, numberCount + 1);
+            } else {
+                insideOfMap.put(number, 1);
             }
         }
         for(Map.Entry<Integer, Integer> entry : insideOfMap.entrySet()){

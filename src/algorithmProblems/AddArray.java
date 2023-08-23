@@ -12,21 +12,21 @@ public class AddArray {
         System.out.println("Enter the new number");
         int newElement = sc.nextInt();
 
-        int newLength = array.length + 1;
-        int[] newArray = new int[newLength];
-
+        int newLength = array.length ;
+        System.out.println(newLength);
+        int[] newArray = new int[newLength+1];
         for (int i = 0; i < array.length; i++) {
             newArray[i] = array[i];
         }
 
-        newArray[newLength - 1] = newElement;
+        newArray[newLength] = newElement;
         displayArray(newArray);
     }
 
 
     public static void displayArray(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        for (int j : array) {
+            System.out.println(j);
         }
 
     }
