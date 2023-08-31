@@ -6,9 +6,10 @@ public class ReverseInteger {
         int t = 0;
 
         while (x != 0) {
-            int z =x%10;
-            if (t>Integer.MAX_VALUE/10||t<Integer.MIN_VALUE/10){
-                return 0;}
+            if (t > Integer.MAX_VALUE / 10 || t < Integer.MIN_VALUE / 10) {
+                return 0;
+            }
+            int z = x % 10;
             t = t * 10 + z;
             x /= 10;
 
@@ -17,6 +18,7 @@ public class ReverseInteger {
 
         return t;
     }
+
     public static void main(String[] args) {
         System.out.println(reverse(-1277777030));
     }
