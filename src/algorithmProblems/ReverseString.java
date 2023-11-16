@@ -9,6 +9,16 @@ public class ReverseString {
         return reversed;
     }
 
+    public static String reverseString1(String s){
+        char[] chars = s.toCharArray();
+        String revString ="";
+
+        for (int i= chars.length-1; i>=0;i--){
+            revString += chars[i];
+        }
+        return revString;
+    }
+
     public static String reverseString2(String str) {
         if (str == null) {
             return null;
@@ -33,7 +43,7 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
-        reverseString("khadija");
+        System.out.println(reverseString1("khadija"));
     }
 
 }

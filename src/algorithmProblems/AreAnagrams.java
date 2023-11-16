@@ -6,8 +6,8 @@ public class AreAnagrams {
     public static boolean areAnagrams(String s1, String s2) {
 
 
-        String trimmedS1 = s1.replace("//s", "").toLowerCase();
-        String trimmedS2 = s2.replace("//s", "").toLowerCase();
+        String trimmedS1 = s1.trim();
+        String trimmedS2 = s2.trim();
 
         if (trimmedS1.length() != trimmedS2.length()) {
             return false;
@@ -39,7 +39,7 @@ public class AreAnagrams {
     }
 
     public static void main(String[] args) {
-        System.out.println(areAnagrams("khady", "hadyk"));
+        System.out.println(areAnagrams("khady", "haxyk"));
     }
 
 }
