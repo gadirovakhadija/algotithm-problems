@@ -28,6 +28,6 @@ public class PolindromeNumbers {
             return input;
         }
 
-        return reverseString(input.substring(1)) ;
+        return reverseString(input.substring(1)) + input.charAt(0) ;
     }
 }
