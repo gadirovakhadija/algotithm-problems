@@ -19,6 +19,18 @@ public class BestBuySell {
         return -list.get(0);
     }
 
+    public int maxProfit2(int[] prices) {
+        int min_price = prices[0];
+        int maxprof = 0;
+
+        for(int i=1;i<prices.length;i++){
+            maxprof = Math.max(maxprof,prices[i]-min_price);
+            min_price = Math.min(prices[i],min_price);
+        }
+
+        return maxprof;
+    }
+
     public static void main(String[] args) {
         System.out.println(maxProfit(new int[]{2,1,4,5,2,4,5}));
     }
