@@ -30,4 +30,22 @@ public class PolindromeNumbers {
 
         return reverseString(input.substring(1)) + input.charAt(0) ;
     }
+
+    public static boolean isPalindrome(String input) {
+        input = input.toLowerCase().replaceAll("[^a-z0-9]", "");
+
+        int left = 0;
+        int right = input.length() - 1;
+
+        while (left < right) {
+            if (input.charAt(left) != input.charAt(right)) {
+                return false; // Not a palindrome
+            }
+            left++;
+            right--;
+        }
+
+        return true; // Palindrome
+    }
+
 }
