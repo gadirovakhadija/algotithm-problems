@@ -1,4 +1,4 @@
-package algorithmProblems;
+package algorithmProblems.interview;
 
 import java.util.Arrays;
 

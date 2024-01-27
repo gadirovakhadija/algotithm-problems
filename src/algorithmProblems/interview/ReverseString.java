@@ -1,4 +1,4 @@
-package algorithmProblems;
+package algorithmProblems.interview;
 
 public class ReverseString {
     public static StringBuilder reverseString(String s) {

@@ -1,4 +1,4 @@
-package algorithmProblems;
+package algorithmProblems.interview;
 
 public class IsPalindrome {
     public boolean isPalindrome(String s) {
