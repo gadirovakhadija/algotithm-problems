@@ -13,4 +13,19 @@ public class IsPalindrome {
         }
         return true;
     }
+    public static boolean isPalindrome(int number){
+        int newNumber=number;
+        int t = 0;
+        while(number!=0){
+            int x = number%10;
+            t=t*10+x;
+            number/=10;
+
+        }
+        if (t==newNumber){
+            return true;
+        }
+        return false;
+
+    }
 }
