@@ -22,7 +22,19 @@ public class ReverseString {
         return reversed;
     }
 
+    public static String reverseStringStack(String s){
+        Stack<Character> stack = new Stack<>();
+        String reversed ="";
+        for (int i=0;i<s.length();i++){
+            stack.add(s.charAt(i));
+        }
+        while (!stack.isEmpty()){
+            reversed+=stack.pop();
+        }
+        return reversed;
+    }
+
     public static void main(String[] args) {
-        System.out.println(reverseStringBuilder("khadija"));
+        System.out.println(reverseStringStack("khadija"));
     }
 }
