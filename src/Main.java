@@ -1,4 +1,4 @@
-import java.util.*;
+import algorithmProblems.LeetCode.TwoSum;
 
 public class Main {
 
@@ -68,8 +68,11 @@ public static int fact(int n){
 
     }
 
+
+
     public static void main(String[] args) {
-        System.out.println(isPalindrome(-232));
+        int[] n = new int[]{2,4,5,2,5};
+        System.out.println(TwoSum.twoSum(n,7));
     }
 
 }
