@@ -1,4 +1,4 @@
-package algorithmProblems.CodingChallenge;
+package algorithmProblems.CodingChallenge.Foundations;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package algorithmProblems.CodingChallenge;
+package algorithmProblems.CodingChallenge.Foundations;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -25,7 +25,7 @@ public class OcurrElemArr {
 
         /*getOrDefault using for if have like this value at container get it
          or give it 0 valueh*/
-        
+
         for (int num : arr) {
             countElem.put(num, countElem.getOrDefault(num, 0) + 1);
         }

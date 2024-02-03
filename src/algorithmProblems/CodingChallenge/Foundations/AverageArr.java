@@ -1,4 +1,4 @@
-package algorithmProblems.CodingChallenge;
+package algorithmProblems.CodingChallenge.Foundations;
 
 public class AverageArr {
     public static double averageArrFor(int[] arr) {

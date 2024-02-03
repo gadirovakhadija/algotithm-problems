@@ -1,4 +1,4 @@
-package algorithmProblems.CodingChallenge;
+package algorithmProblems.CodingChallenge.Foundations;
 
 public class Factorial {
     public static int factLoop(int n){
