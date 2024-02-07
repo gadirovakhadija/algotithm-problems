@@ -19,6 +19,6 @@ public class AnagramString {
     }
 
     public static void main(String[] args) {
-        System.out.println(anagramString("xadica","Xdacia"));
+        System.out.println(anagramString("xadica","Xadica1"));
     }
 }
