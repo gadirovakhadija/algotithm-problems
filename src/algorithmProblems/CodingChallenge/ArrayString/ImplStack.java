@@ -1,4 +1,4 @@
-package algorithmProblems.CodingChallenge;
+package algorithmProblems.CodingChallenge.ArrayString;
 
 import java.util.Stack;
 
