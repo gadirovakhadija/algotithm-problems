@@ -1,19 +1,25 @@
 package algorithmProblems.CodingChallenge.Agency;
 
-public class SpiralNumbers {
+public class SpiralNumbersNM {
 
     public static void main(String[] args) {
-        int n = 4;
-        int[][] spiral = printSpiral(n);
-        printSpiral(spiral);
+        int n = 6, m = 7;
+        int[][] spiral = printSpiral(n, m);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.printf("%-4d", spiral[i][j]);
+            }
+            System.out.println();
+        }
     }
-    public static int[][] printSpiral(int n) {
-        int[][] spiral = new int[n][n];
+
+    public static int[][] printSpiral(int n, int m) {
+        int[][] spiral = new int[n][m];
         int value = 1;
         int minRow = 0, minCol = 0;
-        int maxRow = n - 1, maxCol = n - 1;
+        int maxRow = m - 1, maxCol = n - 1;
 
-        while (value <= n * n) {
+        while (value <= n * m) {
 
             // Top row
             for (int i = minCol; i <= maxCol; i++) {
@@ -41,16 +47,6 @@ public class SpiralNumbers {
         }
 
         return spiral;
-    }
-
-    public static void printSpiral(int[][] spiral) {
-        int n = spiral.length;
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                System.out.printf("%-4d", spiral[i][j]);
-            }
-            System.out.println();
-        }
     }
 
 }
